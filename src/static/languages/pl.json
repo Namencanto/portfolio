@@ -1,0 +1,91 @@
+{
+  "lang": "pl",
+  "navbar": {
+    "list": [
+      "STRONA GŁÓWNA",
+      "O MNIE",
+      "UMIEJĘTNOŚCI",
+      "PROJEKTY",
+      "CV",
+      "KONTAKT"
+    ],
+    "description": "Zbudujmy razem coś wyjątkowego",
+    "contact-description": "Skontaktujmy się"
+  },
+  "main": {
+    "above-text": "ZBUDUJMY COŚ RAZEM",
+    "title": {
+      "greeting": "Cześć, Jestem",
+      "name": "Mateusz",
+      "position": "Front-End Web Developer"
+    },
+    "description": "Skupiam się na tworzeniu responsywnych aplikacji front-end zintegrowanych z back-endem"
+  },
+  "about": {
+    "above-text": "O MNIE",
+    "title": "Kim Jestem",
+    "description": [
+      "Specjalizuję się w budowaniu mobilnych, responsywnych aplikacji front-end UI, które łączą się z API i innymi technologiami backendowymi. Z pasją poznaję nowe technologie i rozumiem, że istnieje więcej niż jeden sposób na wykonanie zadania. Choć jestem najbardziej biegły w budowaniu aplikacji front-endowych przy użyciu HTML, CSS, Javascript i React, szybko się uczę i w miarę potrzeby mogę przyswajać nowe technologie. Wierzę, że bycie świetnym programistą nie polega na używaniu jednego konkretnego języka, ale na wyborze najlepszego narzędzia do pracy.",
+      "Od 2022 roku zajmuję się tworzeniem stron internetowych. Mam doświadczenie w bezpośredniej pracy z klientami i tworzeniu makiet, aż do wdrożenia aplikacji."
+    ],
+    "button-text": "Sprawdź kilka moich ostatnich projektów."
+  },
+  "skills": {
+    "above-text": "UMIEJĘTNOŚCI",
+    "title": "Poznane technologie"
+  },
+  "projects": {
+    "above-text": "PROJEKTY",
+    "title": "Co stworzyłem",
+    "projects": ["GymGuru", "Techcards", "Portfolio", "ZOL"],
+    "button-text": "Więcej informacji"
+  },
+  "contact": {
+    "above-text": "KONTAKT",
+    "title": "Skontaktuj się ze mną",
+    "full-name": "Mateusz",
+    "position": "Front-End Developer",
+    "job-status": "Jestem dostępny na stanowiska w pełnym wymiarze godzin. Skontaktuj się ze mną i porozmawiajmy.",
+    "contact-description": "Skontaktujmy się",
+    "form": {
+      "name": "IMIĘ",
+      "phone": "TELEFON",
+      "email": "EMAIL",
+      "subject": "TEMAT",
+      "message": "WIADOMOŚĆ",
+      "button-text": "Wyślij wiadomość"
+    }
+  },
+  "projects-info": {
+    "above-text": "Projekt",
+    "title": "Opis",
+    "code-button": "KOD",
+    "demo-button": "DEMO",
+    "back-button": "Powrót",
+    "technology-list-title": "Technologie",
+    "gymguru": {
+      "name": "GymGuru",
+      "main-technologies": "MongoDB, Node + Express, EJS, SCSS, JS",
+      "all-technologies": ["MongoDB", "Node + Express", "EJS", "SCSS", "JS"],
+      "description": "Ta aplikacja została zbudowana przy użyciu React JS i jest hostowana na Firebase. Użytkownicy mogą wyszukiwać właściwości na podstawie adresu, miasta lub kodu ZIP, aby pobrać listę aktywnych właściwości obecnie na sprzedaż. Użytkownik będzie mógł wyświetlić informacje o nieruchomości, jak również konkretną lokalizację nieruchomości zintegrowaną z Google Maps API. Uwierzytelnianie użytkownika jest dostępny, więc można zapisać się i zalogować się do swojego konta z adresem e-mail, aby zapisać swoje ulubione właściwości. Jest to możliwe dzięki Zillow API."
+    },
+    "techcards": {
+      "name": "Techcards",
+      "main-technologies": "MySql, Node + Express, React, SCSS",
+      "all-technologies": ["MySql", "Node + Express", "React", "SCSS"],
+      "description": "Ta aplikacja została zbudowana przy użyciu React JS i jest hostowana na Firebase. Użytkownicy mogą wyszukiwać właściwości na podstawie adresu, miasta lub kodu ZIP, aby pobrać listę aktywnych właściwości obecnie na sprzedaż. Użytkownik będzie mógł wyświetlić informacje o nieruchomości, jak również konkretną lokalizację nieruchomości zintegrowaną z Google Maps API. Uwierzytelnianie użytkownika jest dostępny, więc można zapisać się i zalogować się do swojego konta z adresem e-mail, aby zapisać swoje ulubione właściwości. Jest to możliwe dzięki Zillow API."
+    },
+    "portfolio": {
+      "name": "Portfolio",
+      "main-technologies": "Next + Typescript, Tailwind",
+      "all-technologies": ["Next + Typescript", "Tailwind"],
+      "description": "Ta aplikacja została zbudowana przy użyciu React JS i jest hostowana na Firebase. Użytkownicy mogą wyszukiwać właściwości na podstawie adresu, miasta lub kodu ZIP, aby pobrać listę aktywnych właściwości obecnie na sprzedaż. Użytkownik będzie mógł wyświetlić informacje o nieruchomości, jak również konkretną lokalizację nieruchomości zintegrowaną z Google Maps API. Uwierzytelnianie użytkownika jest dostępny, więc można zapisać się i zalogować się do swojego konta z adresem e-mail, aby zapisać swoje ulubione właściwości. Jest to możliwe dzięki Zillow API."
+    },
+    "zol": {
+      "name": "Zol",
+      "main-technologies": "MongoDB, Node + Express, EJS, SCSS, JS",
+      "all-technologies": ["MongoDB", "Node + Express", "EJS", "SCSS", "JS"],
+      "description": "Ta aplikacja została zbudowana przy użyciu React JS i jest hostowana na Firebase. Użytkownicy mogą wyszukiwać właściwości na podstawie adresu, miasta lub kodu ZIP, aby pobrać listę aktywnych właściwości obecnie na sprzedaż. Użytkownik będzie mógł wyświetlić informacje o nieruchomości, jak również konkretną lokalizację nieruchomości zintegrowaną z Google Maps API. Uwierzytelnianie użytkownika jest dostępny, więc można zapisać się i zalogować się do swojego konta z adresem e-mail, aby zapisać swoje ulubione właściwości. Jest to możliwe dzięki Zillow API."
+    }
+  }
+}

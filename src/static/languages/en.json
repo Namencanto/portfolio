@@ -1,0 +1,84 @@
+{
+  "lang": "en",
+  "navbar": {
+    "list": ["HOME", "ABOUT", "SKILLS", "PROJECTS", "CV", "CONTACT"],
+    "description": "Let's build something unique together",
+    "contact-description": "LET'S CONNECT"
+  },
+  "main": {
+    "above-text": "LET'S BUILD SOMETHING TOGETHER",
+    "title": {
+      "greeting": "Hi, I'm",
+      "name": "Mateusz",
+      "position": "A Front-End Web Developer"
+    },
+    "description": "I’m focused on building responsive front-end web applications integrating back-end technologies."
+  },
+  "about": {
+    "above-text": "ABOUT",
+    "title": "Who I Am",
+    "description": [
+      "I specialize in building mobile responsive front-end UI applications that connect with API’s and other backend technologies. I’m passionate about learning new technologies and understand there is more than one way to accomplish a task. Though I am most proficient in building front-end applications using HTML, CSS, Javascript, and React, I am a quick learner and can pick up new tech stacks as needed. I believe that being a great developer is not using one specific language, but choosing the best tool for the job.",
+      "I started web developement in 2022 I have experience working directly with clients and taking mock wireframes all the way to deployed applications."
+    ],
+    "button-text": "Check out some of my latest projects."
+  },
+  "skills": {
+    "above-text": "SKILLS",
+    "title": "What I Can Do"
+  },
+  "projects": {
+    "above-text": "PROJECTS",
+    "title": "What I've Built",
+    "projects": ["GymGuru App", "Techcards App", "Portfolio App", "ZOL App"],
+    "button-text": "More info"
+  },
+  "contact": {
+    "above-text": "CONTACT",
+    "title": "Get In Touch",
+    "full-name": "Mateusz",
+    "position": "Front-End Developer",
+    "job-status": "I am available for full-time positions. Contact me and let's talk.",
+    "contact-description": "CONNECT WITH ME",
+    "form": {
+      "name": "NAME",
+      "phone": "PHONE",
+      "email": "EMAIL",
+      "subject": "SUBJECT",
+      "message": "MESSAGE",
+      "button-text": "Send Message"
+    }
+  },
+  "projects-info": {
+    "above-text": "Project",
+    "title": "Overview",
+    "code-button": "CODE",
+    "demo-button": "DEMO",
+    "back-button": "Back",
+    "technology-list-title": "Technologies",
+    "gymguru": {
+      "name": "GymGuru",
+      "main-technologies": "MongoDB, Node + Express, EJS, SCSS, JS",
+      "all-technologies": ["MongoDB", "Node + Express", "EJS", "SCSS", "JS"],
+      "description": "This app was built using React JS and is hosted on Firebase. Users are able to search properties based on an Address, City, or ZIP code to retrieve a list of active properties currently for sale. You will be able to view property information as well as the specific location of the property integrated with the Google Maps API. User authentication is available so you can signup and signin to your account with an email address in order to save your favorite properties. This is made possible with Zillow API."
+    },
+    "techcards": {
+      "name": "Techcards",
+      "main-technologies": "MySql, Node + Express, React, SCSS",
+      "all-technologies": ["MySql", "Node + Express", "React", "SCSS"],
+      "description": "This app was built using React JS and is hosted on Firebase. Users are able to search properties based on an Address, City, or ZIP code to retrieve a list of active properties currently for sale. You will be able to view property information as well as the specific location of the property integrated with the Google Maps API. User authentication is available so you can signup and signin to your account with an email address in order to save your favorite properties. This is made possible with Zillow API."
+    },
+    "portfolio": {
+      "name": "Portfolio",
+      "main-technologies": "Next + Typescript, Tailwind",
+      "all-technologies": ["Next + Typescript", "Tailwind"],
+      "description": "This app was built using React JS and is hosted on Firebase. Users are able to search properties based on an Address, City, or ZIP code to retrieve a list of active properties currently for sale. You will be able to view property information as well as the specific location of the property integrated with the Google Maps API. User authentication is available so you can signup and signin to your account with an email address in order to save your favorite properties. This is made possible with Zillow API."
+    },
+    "zol": {
+      "name": "Zol",
+      "main-technologies": "MongoDB, Node + Express, EJS, SCSS, JS",
+      "all-technologies": ["MongoDB", "Node + Express", "EJS", "SCSS", "JS"],
+      "description": "This app was built using React JS and is hosted on Firebase. Users are able to search properties based on an Address, City, or ZIP code to retrieve a list of active properties currently for sale. You will be able to view property information as well as the specific location of the property integrated with the Google Maps API. User authentication is available so you can signup and signin to your account with an email address in order to save your favorite properties. This is made possible with Zillow API."
+    }
+  }
+}

@@ -10,6 +10,7 @@ interface ProjectsLanguageProps {
     "above-text": string;
     title: string;
     projects: string[];
+    "button-text": string;
   };
 }
 
@@ -27,24 +28,28 @@ const Projects: React.FC<ProjectsLanguageProps> = ({ languageData }) => {
             backgroundImg={gymguruImg}
             projectUrl="/gymguru"
             tech="MongoDB, Node + Express, EJS, SCSS, JS"
+            buttonText={languageData["button-text"]}
           />
           <ProjectItem
             title={languageData.projects[1]}
             backgroundImg={techcardsImg}
             projectUrl="/crypto"
             tech="MySql, Node + Express, React, SCSS"
+            buttonText={languageData["button-text"]}
           />
           <ProjectItem
             title={languageData.projects[2]}
             backgroundImg={portfolioImg}
             projectUrl="/portfolio"
             tech="Next + Typescript, Tailwind"
+            buttonText={languageData["button-text"]}
           />
           <ProjectItem
             title={languageData.projects[3]}
             backgroundImg={twitchImg}
             projectUrl="/twitch"
             tech="Next JS"
+            buttonText={languageData["button-text"]}
           />
         </div>
       </div>
