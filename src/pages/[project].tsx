@@ -4,6 +4,11 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from "next";
 
+import TechcardsImage from "../../public/assets/projects/techcards.png";
+import GymGuruImage from "../../public/assets/projects/gymguru.png";
+import PortfolioImage from "../../public/assets/projects/portfolio.png";
+import ZolImage from "../../public/assets/projects/zol.jpg";
+
 interface ProjectLanguageProps {
   languageDataEn: {
     "above-text": string;
@@ -215,25 +220,29 @@ export const getStaticProps: GetStaticProps = async (
   ) {
     let demoLink = "";
     let codeLink = "";
+    let imageData: StaticImageData | undefined;
 
     if (params === "gymguru") {
       demoLink = gymguruDemoLink;
       codeLink = gymguruCodeLink;
+      imageData = GymGuruImage;
     }
     if (params === "techcards") {
       demoLink = techcardsDemoLink;
       codeLink = techcardsCodeLink;
+      imageData = TechcardsImage;
     }
     if (params === "zol") {
       demoLink = zolDemoLink;
       codeLink = zolCodeLink;
+      imageData = ZolImage;
     }
     if (params === "portfolio") {
       demoLink = "/";
       codeLink = portfolioCodeLink;
+      imageData = PortfolioImage;
     }
 
-    const imageData = `/../public/assets/projects/${params}.png`;
     return {
       props: {
         languageDataEn: {
