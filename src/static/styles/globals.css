@@ -39,3 +39,15 @@ html {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
   }
 }
+
+:root {
+  --shadow-color: #9ca3af;
+  --color-link: #1f2937;
+  --main-color-700: rgb(55 65 81);
+  --main-color-600: rgb(75 85 99);
+  --background-color: #ecf0f3;
+  --color-primary: #5651e5;
+
+  --cv-primary: #dce2e7;
+  --cv-secondary: #f3f4f6;
+}

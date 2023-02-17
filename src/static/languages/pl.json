@@ -25,8 +25,8 @@
     "above-text": "O MNIE",
     "title": "Kim Jestem",
     "description": [
-      "Specjalizuję się w budowaniu mobilnych, responsywnych aplikacji front-end UI, które łączą się z API i innymi technologiami backendowymi. Z pasją poznaję nowe technologie i rozumiem, że istnieje więcej niż jeden sposób na wykonanie zadania. Choć jestem najbardziej biegły w budowaniu aplikacji front-endowych przy użyciu HTML, CSS, Javascript i React, szybko się uczę i w miarę potrzeby mogę przyswajać nowe technologie. Wierzę, że bycie świetnym programistą nie polega na używaniu jednego konkretnego języka, ale na wyborze najlepszego narzędzia do pracy.",
-      "Od 2022 roku zajmuję się tworzeniem stron internetowych. Mam doświadczenie w bezpośredniej pracy z klientami i tworzeniu makiet, aż do wdrożenia aplikacji."
+      "Jestem samoukiem skupionym na programowaniu aplikacji łączących front-end z back-endem, a moje zainteresowania skupiają się głównie na technologiach takich jak React, Next.js, TypeScript, Node, Express, MongoDB i MySQL. Docelowo chciałbym zostać full-stack developerem",
+      "Posiadam doświadczenie w tworzeniu projektów, w których wykorzystywałem swoje umiejętności. W trakcie mojej edukacji stworzyłem kilka aplikacji, które pomogły mi doskonalić swoje umiejętności w programowaniu."
     ],
     "button-text": "Sprawdź kilka moich ostatnich projektów."
   },
@@ -65,27 +65,46 @@
     "technology-list-title": "Technologie",
     "gymguru": {
       "name": "GymGuru",
-      "main-technologies": "MongoDB, Node + Express, EJS, SCSS, JS",
-      "all-technologies": ["MongoDB", "Node + Express", "EJS", "SCSS", "JS"],
-      "description": "Ta aplikacja została zbudowana przy użyciu React JS i jest hostowana na Firebase. Użytkownicy mogą wyszukiwać właściwości na podstawie adresu, miasta lub kodu ZIP, aby pobrać listę aktywnych właściwości obecnie na sprzedaż. Użytkownik będzie mógł wyświetlić informacje o nieruchomości, jak również konkretną lokalizację nieruchomości zintegrowaną z Google Maps API. Uwierzytelnianie użytkownika jest dostępny, więc można zapisać się i zalogować się do swojego konta z adresem e-mail, aby zapisać swoje ulubione właściwości. Jest to możliwe dzięki Zillow API."
+      "main-technologies": "Javascript, Node",
+      "all-technologies": [
+        "Javascript",
+        "Node",
+        "Express",
+        "EJS",
+        "MongoDB",
+        "SCSS"
+      ],
+      "description": "To była moja pierwsza pełnoprawna strona internetowa, która była zwieńczeniem, jak i sprawdzeniem moich pierwszych zdobytych umiejętności w praktyce. Użyłem do jej stworzenia czystego JavaScript-a wraz z EJS i SCSS do stworzenia frontendu, Node + Express do stworzenia serwera oraz MongoDB jako bazy danych. Jest to strona imitująca stronę miejskiej siłowni, na której można sprawdzić aktualną ofertę siłowni, sprawdzić jej lokalizację i skontaktować się z nią. Istnieje również możliwość założenia własnego konta i personalizacji."
     },
     "techcards": {
       "name": "Techcards",
-      "main-technologies": "MySql, Node + Express, React, SCSS",
-      "all-technologies": ["MySql", "Node + Express", "React", "SCSS"],
-      "description": "Ta aplikacja została zbudowana przy użyciu React JS i jest hostowana na Firebase. Użytkownicy mogą wyszukiwać właściwości na podstawie adresu, miasta lub kodu ZIP, aby pobrać listę aktywnych właściwości obecnie na sprzedaż. Użytkownik będzie mógł wyświetlić informacje o nieruchomości, jak również konkretną lokalizację nieruchomości zintegrowaną z Google Maps API. Uwierzytelnianie użytkownika jest dostępny, więc można zapisać się i zalogować się do swojego konta z adresem e-mail, aby zapisać swoje ulubione właściwości. Jest to możliwe dzięki Zillow API."
+      "main-technologies": "React, Node",
+      "all-technologies": ["React", "Node", "Express", "MySql", "SCSS"],
+      "description": "Ta strona jest moim drugim projektem, jak i zarazem pierwszym stworzonym przy użyciu Reacta. Jest to jak na razie mój największy projekt do którego stworzenia oprócz Reacta użyłem również SCSS, Node + Express do tworzenia serwera oraz MySql jako bazy danych. Jest to strona która służy do nauki poprzez fiszki, Użytkownicy mają możliwość tworzenia własnych fiszek i korzystania z różnych opcji nauki, takich jak wpisywanie, quiz, tryb wiem/nie wiem i wiele więcej. posiada panel ze stworzonymi kursami przy użyciu fiszek, które są podzielone na fiszki bezpłatne i premium do których można uzyskać dostęp po kupnie konta premium. W inteligentny sposób oblicza powtórki. Posiada pełne statystyki nauki pomocne w śledzeniu postępów nauki dostępne użytkownikowi a także miesięczny ranking aktywności użytkowników, posiada wiele funkcjonalności ułatwiających naukę. Posiada działający newsletter. Strona generuje także faktury sprzedaży kont premium."
     },
     "portfolio": {
       "name": "Portfolio",
-      "main-technologies": "Next + Typescript, Tailwind",
-      "all-technologies": ["Next + Typescript", "Tailwind"],
-      "description": "Ta aplikacja została zbudowana przy użyciu React JS i jest hostowana na Firebase. Użytkownicy mogą wyszukiwać właściwości na podstawie adresu, miasta lub kodu ZIP, aby pobrać listę aktywnych właściwości obecnie na sprzedaż. Użytkownik będzie mógł wyświetlić informacje o nieruchomości, jak również konkretną lokalizację nieruchomości zintegrowaną z Google Maps API. Uwierzytelnianie użytkownika jest dostępny, więc można zapisać się i zalogować się do swojego konta z adresem e-mail, aby zapisać swoje ulubione właściwości. Jest to możliwe dzięki Zillow API."
+      "main-technologies": "Next",
+      "all-technologies": ["Next", "Typescript", "Tailwind"],
+      "description": "Jest to mój trzeci projekt, jest to portfolio umożliwiające łatwy dostęp do moich projektów i pokazujące moje umiejętności, zbudowałem go przy użyciu Next.js wraz z Typescript i Tailwind. Był to dla mnie wspaniały projekt, który pozwolił mi na poznanie tych technologii. Posiada możliwość zmiany języka z polskiego na angielski oraz zmiany motywu na ciemny."
     },
     "zol": {
       "name": "Zol",
-      "main-technologies": "MongoDB, Node + Express, EJS, SCSS, JS",
-      "all-technologies": ["MongoDB", "Node + Express", "EJS", "SCSS", "JS"],
-      "description": "Ta aplikacja została zbudowana przy użyciu React JS i jest hostowana na Firebase. Użytkownicy mogą wyszukiwać właściwości na podstawie adresu, miasta lub kodu ZIP, aby pobrać listę aktywnych właściwości obecnie na sprzedaż. Użytkownik będzie mógł wyświetlić informacje o nieruchomości, jak również konkretną lokalizację nieruchomości zintegrowaną z Google Maps API. Uwierzytelnianie użytkownika jest dostępny, więc można zapisać się i zalogować się do swojego konta z adresem e-mail, aby zapisać swoje ulubione właściwości. Jest to możliwe dzięki Zillow API."
+      "main-technologies": "Wkrótce",
+      "all-technologies": ["Wkrótce"],
+      "description": "Wkrótce"
+    }
+  },
+  "cv": {
+    "left-side": {
+      "contact": "Kontakt",
+      "personal-skills-title": "Umiejętności",
+      "hobbies-title": "Zainteresowania",
+      "hobbies": ["Siłownia", "Dietetyka", "Inwestowanie"]
+    },
+    "right-side": {
+      "about-me-title": "O mnie",
+      "about-me": "Jestem samoukiem skupionym na programowaniu aplikacji łączących front-end z back-endem, a moje zainteresowania skupiają się głównie na technologiach takich jak React, Next.js, TypeScript, Node, Express, MongoDB i MySQL. Dolecowo chciałbym zostać full-stack developerem"
     }
   }
 }

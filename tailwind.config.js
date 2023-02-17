@@ -4,13 +4,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ["color-link"]: "#1f2937",
-        ["color-background"]: "#ecf0f3",
-        ["color-text-primary"]: "#5651e5",
+        ["color-link"]: "var(--color-link)",
+        ["color-background"]: "var(--background-color)",
+        ["color-text-primary"]: "var(--color-primary)",
 
-        ["color-link-dark"]: "#E8E9EB",
-        ["color-background-dark"]: "#1C1C1D",
-        ["color-text-primary-dark"]: "#5651e5",
+        ["color-cv-primary"]: "var(--cv-primary)",
+        ["color-cv-secondary"]: "var(--cv-secondary)",
+      },
+      boxShadow: {
+        ["default-lg"]: "0 10px 15px -3px var(--shadow-color)",
+        ["default-xl"]: "0 20px 25px -5px var(--shadow-color)",
+      },
+      textColor: {
+        ["main-color-700"]: "var(--main-color-700)",
+        ["main-color-600"]: "var(--main-color-600)",
+      },
+      screens: {
+        nav: "920px",
       },
     },
   },

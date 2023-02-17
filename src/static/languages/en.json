@@ -18,8 +18,8 @@
     "above-text": "ABOUT",
     "title": "Who I Am",
     "description": [
-      "I specialize in building mobile responsive front-end UI applications that connect with API’s and other backend technologies. I’m passionate about learning new technologies and understand there is more than one way to accomplish a task. Though I am most proficient in building front-end applications using HTML, CSS, Javascript, and React, I am a quick learner and can pick up new tech stacks as needed. I believe that being a great developer is not using one specific language, but choosing the best tool for the job.",
-      "I started web developement in 2022 I have experience working directly with clients and taking mock wireframes all the way to deployed applications."
+      "I am a self-taught developer focused on programming applications that combine front-end and back-end, and my interests are mainly focused on technologies such as React, Next.js, TypeScript, Node, Express, MongoDB and MySQL. Eventually I would like to become a full-stack developer.",
+      "I have experience in creating projects where I have used my skills. During my education I created several applications that helped me improve my programming skills."
     ],
     "button-text": "Check out some of my latest projects."
   },
@@ -58,27 +58,46 @@
     "technology-list-title": "Technologies",
     "gymguru": {
       "name": "GymGuru",
-      "main-technologies": "MongoDB, Node + Express, EJS, SCSS, JS",
-      "all-technologies": ["MongoDB", "Node + Express", "EJS", "SCSS", "JS"],
-      "description": "This app was built using React JS and is hosted on Firebase. Users are able to search properties based on an Address, City, or ZIP code to retrieve a list of active properties currently for sale. You will be able to view property information as well as the specific location of the property integrated with the Google Maps API. User authentication is available so you can signup and signin to your account with an email address in order to save your favorite properties. This is made possible with Zillow API."
+      "main-technologies": "Javascript, Node",
+      "all-technologies": [
+        "Javascript",
+        "Node",
+        "Express",
+        "EJS",
+        "MongoDB",
+        "SCSS"
+      ],
+      "description": "This was my first full website, which was both a culmination and a practical test of my newly acquired skills. I used pure JavaScript to build it, along with EJS and SCSS for the frontend, Node + Express for the server and MongoDB for the database. It's a site that mimics the website of a city gym, where you can check out the gym's current offerings, find its location, and get in touch. It is also possible to create and personalise your own account."
     },
     "techcards": {
       "name": "Techcards",
-      "main-technologies": "MySql, Node + Express, React, SCSS",
-      "all-technologies": ["MySql", "Node + Express", "React", "SCSS"],
-      "description": "This app was built using React JS and is hosted on Firebase. Users are able to search properties based on an Address, City, or ZIP code to retrieve a list of active properties currently for sale. You will be able to view property information as well as the specific location of the property integrated with the Google Maps API. User authentication is available so you can signup and signin to your account with an email address in order to save your favorite properties. This is made possible with Zillow API."
+      "main-technologies": "React, Node",
+      "all-technologies": ["React", "Node", "Express", "MySql", "SCSS"],
+      "description": "This website is my second project and the first to be built using React. It is by far my biggest project so far, for which I used SCSS, Node + Express to build the server and MySql for the database in addition to React. It's a site for learning through fiches, users have the possibility to create their own fiches and use different learning options like typing, quiz, i know/i don't know mode and much more. It has a panel of created courses with fiches, divided into free and premium fiches, which can be accessed after buying a premium account. It intelligently calculates repetitions. It has full learning statistics to help track the learning progress available to the user, as well as a monthly ranking of user activity, it has many features to make learning easier. It has a working newsletter. The site also generates invoices for premium accounts."
     },
     "portfolio": {
       "name": "Portfolio",
-      "main-technologies": "Next + Typescript, Tailwind",
-      "all-technologies": ["Next + Typescript", "Tailwind"],
-      "description": "This app was built using React JS and is hosted on Firebase. Users are able to search properties based on an Address, City, or ZIP code to retrieve a list of active properties currently for sale. You will be able to view property information as well as the specific location of the property integrated with the Google Maps API. User authentication is available so you can signup and signin to your account with an email address in order to save your favorite properties. This is made possible with Zillow API."
+      "main-technologies": "Next",
+      "all-technologies": ["Next", "Typescript", "Tailwind"],
+      "description": "This is my third project, it is a portfolio to easily access my projects and showcase my skills, I built it using Next.js along with Typescript and Tailwind. It was a great project for me to learn about these technologies. It has the ability to change the language from Polish to English and change the theme to dark."
     },
     "zol": {
       "name": "Zol",
-      "main-technologies": "MongoDB, Node + Express, EJS, SCSS, JS",
-      "all-technologies": ["MongoDB", "Node + Express", "EJS", "SCSS", "JS"],
-      "description": "This app was built using React JS and is hosted on Firebase. Users are able to search properties based on an Address, City, or ZIP code to retrieve a list of active properties currently for sale. You will be able to view property information as well as the specific location of the property integrated with the Google Maps API. User authentication is available so you can signup and signin to your account with an email address in order to save your favorite properties. This is made possible with Zillow API."
+      "main-technologies": "Coming soon",
+      "all-technologies": ["Coming soon"],
+      "description": "Coming soon"
+    }
+  },
+  "cv": {
+    "left-side": {
+      "contact": "Contact",
+      "personal-skills-title": "Personal skills",
+      "hobbies-title": "Hobbies",
+      "hobbies": ["Gym", "Nutrition", "Investing"]
+    },
+    "right-side": {
+      "about-me-title": "About me",
+      "about-me": "I am a self-taught developer focused on programming applications that combine front-end and back-end, and my interests are mainly focused on technologies such as React, Next.js, TypeScript, Node, Express, MongoDB and MySQL. Eventually I would like to become a full-stack developer."
     }
   }
 }

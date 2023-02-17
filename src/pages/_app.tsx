@@ -14,13 +14,14 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   };
 
   const [language, setLanguage] = useState<keyof typeof languageData>("pl");
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 
   const currentLanguage = languageData[language];
-
   // Add currentLanguage variable to props
   pageProps = {
     ...pageProps,
     currentLanguage,
+    isDarkMode,
   };
 
   const toggleLanguage = (lang: "en" | "pl") => {
@@ -33,6 +34,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
         languageData={currentLanguage.navbar}
         toggleLanguage={toggleLanguage}
         language={language}
+        setIsDarkMode={setIsDarkMode}
       />
       <Component {...pageProps} />
     </>

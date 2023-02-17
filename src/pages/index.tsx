@@ -58,9 +58,10 @@ interface HomeLanguageProps {
       };
     };
   };
+  isDarkMode: boolean;
 }
 
-const Home: React.FC<HomeLanguageProps> = ({ currentLanguage }) => {
+const Home: React.FC<HomeLanguageProps> = ({ currentLanguage, isDarkMode }) => {
   return (
     <>
       <Head>
@@ -72,7 +73,7 @@ const Home: React.FC<HomeLanguageProps> = ({ currentLanguage }) => {
 
       <Main languageData={currentLanguage.main} />
       <About languageData={currentLanguage.about} />
-      <Skills languageData={currentLanguage.skills} />
+      <Skills languageData={currentLanguage.skills} isDarkMode={isDarkMode} />
       <Projects languageData={currentLanguage.projects} />
       <Contact languageData={currentLanguage.contact} />
     </>

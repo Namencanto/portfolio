@@ -1,6 +1,7 @@
 import React from "react";
 import AboutImg from "../../public/assets/AboutImg.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 interface MainLanguageProps {
   languageData: {
@@ -22,11 +23,14 @@ const About: React.FC<MainLanguageProps> = ({ languageData }) => {
           <h2 className="py-4"> {languageData.title}</h2>
           <p className="py-2 tex-gray-600">{languageData.description[0]}</p>
           <p className="py-2 tex-gray-600">{languageData.description[1]}</p>
-          <p className="py-2 tex-gray-600 underline cursor-pointer">
+          <Link
+            href="#projects"
+            className="py-2 tex-gray-600 underline cursor-pointer"
+          >
             {languageData["button-text"]}
-          </p>
+          </Link>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        <div className="w-full h-auto m-auto shadow-default-xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image className="rounded" src={AboutImg} alt="/" />
         </div>
       </div>

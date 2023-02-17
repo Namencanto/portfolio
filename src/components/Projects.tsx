@@ -2,7 +2,7 @@ import React from "react";
 import techcardsImg from "../../public/assets/projects/techcards.png";
 import gymguruImg from "../../public/assets/projects/gymguru.png";
 import portfolioImg from "../../public/assets/projects/portfolio.png";
-import twitchImg from "../../public/assets/projects/twitch.jpg";
+import zolImg from "../../public/assets/projects/zol.jpg";
 import ProjectItem from "./ProjectItem";
 
 interface ProjectsLanguageProps {
@@ -27,28 +27,28 @@ const Projects: React.FC<ProjectsLanguageProps> = ({ languageData }) => {
             title={languageData.projects[0]}
             backgroundImg={gymguruImg}
             projectUrl="/gymguru"
-            tech="MongoDB, Node + Express, EJS, SCSS, JS"
+            tech="Javascript, Node"
             buttonText={languageData["button-text"]}
           />
           <ProjectItem
             title={languageData.projects[1]}
             backgroundImg={techcardsImg}
-            projectUrl="/crypto"
-            tech="MySql, Node + Express, React, SCSS"
+            projectUrl="/techcards"
+            tech="React, Node"
             buttonText={languageData["button-text"]}
           />
           <ProjectItem
             title={languageData.projects[2]}
             backgroundImg={portfolioImg}
             projectUrl="/portfolio"
-            tech="Next + Typescript, Tailwind"
+            tech="Next.js"
             buttonText={languageData["button-text"]}
           />
           <ProjectItem
             title={languageData.projects[3]}
-            backgroundImg={twitchImg}
-            projectUrl="/twitch"
-            tech="Next JS"
+            backgroundImg={zolImg}
+            projectUrl="/zol"
+            tech="Next.js"
             buttonText={languageData["button-text"]}
           />
         </div>

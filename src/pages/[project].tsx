@@ -120,17 +120,17 @@ const project: React.FC<ProjectLanguageProps> = ({
             <h2>{languageData.title}</h2>
             <p>{languageData.description}</p>
             <a href={codeLink} target="_blank" rel="noreferrer">
-              <button className="px-8 py-2 mt-4 mr-8">
+              <button className=" shadow-default-xl px-8 py-2 mt-4 mr-8">
                 {languageData["code-button"]}
               </button>
             </a>
             <a href={demoLink} target="_blank" rel="noreferrer">
-              <button className="px-8 py-2 mt-4">
+              <button className="shadow-default-xl px-8 py-2 mt-4">
                 {languageData["demo-button"]}
               </button>
             </a>
           </div>
-          <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
+          <div className="col-span-4 md:col-span-1 shadow-default-xl rounded-xl py-4">
             <div className="p-2">
               <p className="text-center font-bold pb-2">
                 {languageData["technology-list-title"]}
@@ -138,7 +138,10 @@ const project: React.FC<ProjectLanguageProps> = ({
               <div className="grid grid-cols-3 md:grid-cols-1">
                 {languageData["all-technologies"].map((technology, i) => {
                   return (
-                    <p key={i} className="text-gray-600 py-2 flex items-center">
+                    <p
+                      key={i}
+                      className="text-main-color-600 py-2 flex items-center"
+                    >
                       <RiRadioButtonFill className="pr-1" /> {technology}
                     </p>
                   );

@@ -41,7 +41,7 @@ const Contact: React.FC<ContactLanguageProps> = ({ languageData }) => {
         <h2 className="py-4">{languageData.title}</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-default-xl rounded-xl p-4">
             <div className="lg:p-4 h-full ">
               <div>
                 <Image
@@ -65,22 +65,22 @@ const Contact: React.FC<ContactLanguageProps> = ({ languageData }) => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <div className="rounded-full shadow-default-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaLinkedinIn />
                     </div>
                   </a>
                   <a href={githubAccountLink} target="_blank" rel="noreferrer">
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <div className="rounded-full shadow-default-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaGithub />
                     </div>
                   </a>
 
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <div className="rounded-full shadow-default-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <AiOutlineMail />
                   </div>
                   <Link href="/resume" legacyBehavior>
                     <a>
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <div className="rounded-full shadow-default-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <BsFillPersonLinesFill />
                       </div>
                     </a>
@@ -91,7 +91,7 @@ const Contact: React.FC<ContactLanguageProps> = ({ languageData }) => {
           </div>
 
           {/* right */}
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+          <div className="col-span-3 w-full h-auto shadow-default-xl rounded-xl lg:p-4">
             <div className="p-4">
               <form
                 action={formHostingLink}
@@ -150,7 +150,7 @@ const Contact: React.FC<ContactLanguageProps> = ({ languageData }) => {
                     name="message"
                   ></textarea>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">
+                <button className="shadow-default-xl w-full p-4 text-gray-100 mt-4">
                   {languageData.form["button-text"]}
                 </button>
               </form>
@@ -160,7 +160,7 @@ const Contact: React.FC<ContactLanguageProps> = ({ languageData }) => {
         <div className="flex justify-center py-12">
           <Link href="/" legacyBehavior>
             <a>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full shadow-default-lg p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                 <HiOutlineChevronDoubleUp
                   className="text-color-text-primary"
                   size={30}
