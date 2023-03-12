@@ -74,25 +74,44 @@
         "MongoDB",
         "SCSS"
       ],
-      "description": "To była moja pierwsza pełnoprawna strona internetowa, która była zwieńczeniem, jak i sprawdzeniem moich pierwszych zdobytych umiejętności w praktyce. Użyłem do jej stworzenia czystego JavaScript-a wraz z EJS i SCSS do stworzenia frontendu, Node + Express do stworzenia serwera oraz MongoDB jako bazy danych. Jest to strona imitująca stronę miejskiej siłowni, na której można sprawdzić aktualną ofertę siłowni, sprawdzić jej lokalizację i skontaktować się z nią. Istnieje również możliwość założenia własnego konta i personalizacji."
+      "description": [
+        "To była moja pierwsza pełnoprawna strona internetowa, która była zwieńczeniem, jak i sprawdzeniem moich pierwszych zdobytych umiejętności w praktyce. Użyłem do jej stworzenia czystego JavaScript-a wraz z EJS i SCSS do stworzenia frontendu, Node + Express do stworzenia serwera oraz MongoDB jako bazy danych. Jest to strona imitująca stronę miejskiej siłowni, na której można sprawdzić aktualną ofertę siłowni, sprawdzić jej lokalizację i skontaktować się z nią. Istnieje również możliwość założenia własnego konta i personalizacji."
+      ]
     },
     "techcards": {
       "name": "Techcards",
       "main-technologies": "React, Node",
       "all-technologies": ["React", "Node", "Express", "MySql", "SCSS"],
-      "description": "Ta strona jest moim drugim projektem, jak i zarazem pierwszym stworzonym przy użyciu Reacta. Jest to jak na razie mój największy projekt do którego stworzenia oprócz Reacta użyłem również SCSS, Node + Express do tworzenia serwera oraz MySql jako bazy danych. Jest to strona która służy do nauki poprzez fiszki, Użytkownicy mają możliwość tworzenia własnych fiszek i korzystania z różnych opcji nauki, takich jak wpisywanie, quiz, tryb wiem/nie wiem i wiele więcej. posiada panel ze stworzonymi kursami przy użyciu fiszek, które są podzielone na fiszki bezpłatne i premium do których można uzyskać dostęp po kupnie konta premium. W inteligentny sposób oblicza powtórki. Posiada pełne statystyki nauki pomocne w śledzeniu postępów nauki dostępne użytkownikowi a także miesięczny ranking aktywności użytkowników, posiada wiele funkcjonalności ułatwiających naukę. Posiada działający newsletter. Strona generuje także faktury sprzedaży kont premium."
+      "description": [
+        "Ta strona jest moim drugim projektem, jak i zarazem pierwszym stworzonym przy użyciu Reacta. Jest to jak na razie mój największy projekt do którego stworzenia oprócz Reacta użyłem również SCSS, Node + Express do tworzenia serwera oraz MySql jako bazy danych. Jest to strona która służy do nauki poprzez fiszki, Użytkownicy mają możliwość tworzenia własnych fiszek i korzystania z różnych opcji nauki, takich jak wpisywanie, quiz, tryb wiem/nie wiem i wiele więcej. posiada panel ze stworzonymi kursami przy użyciu fiszek, które są podzielone na fiszki bezpłatne i premium do których można uzyskać dostęp po kupnie konta premium. W inteligentny sposób oblicza powtórki. Posiada pełne statystyki nauki pomocne w śledzeniu postępów nauki dostępne użytkownikowi a także miesięczny ranking aktywności użytkowników, posiada wiele funkcjonalności ułatwiających naukę. Posiada działający newsletter. Strona generuje także faktury sprzedaży kont premium."
+      ]
     },
     "portfolio": {
       "name": "Portfolio",
       "main-technologies": "Next",
       "all-technologies": ["Next", "Typescript", "Tailwind"],
-      "description": "Jest to mój trzeci projekt, jest to portfolio umożliwiające łatwy dostęp do moich projektów i pokazujące moje umiejętności, zbudowałem go przy użyciu Next.js wraz z Typescript i Tailwind. Był to dla mnie wspaniały projekt, który pozwolił mi na poznanie tych technologii. Posiada możliwość zmiany języka z polskiego na angielski oraz zmiany motywu na ciemny."
+      "description": [
+        "Jest to mój trzeci projekt, jest to portfolio umożliwiające łatwy dostęp do moich projektów i pokazujące moje umiejętności, zbudowałem go przy użyciu Next.js wraz z Typescript i Tailwind. Był to dla mnie wspaniały projekt, który pozwolił mi na poznanie tych technologii. Posiada możliwość zmiany języka z polskiego na angielski oraz zmiany motywu na ciemny."
+      ]
     },
     "zol": {
-      "name": "Zol",
-      "main-technologies": "Wkrótce",
-      "all-technologies": ["Wkrótce"],
-      "description": "Wkrótce"
+      "name": "Zakład Opiekuńczo-Leczniczy w Koprzywnicy",
+      "main-technologies": "Next",
+      "all-technologies": [
+        "Next",
+        "Typescript",
+        "Tailwind",
+        "Google Analytics"
+      ],
+      "description": [
+        "Strona internetowa zol-koprzywnica.pl to mój czwarty projekt i zarazem pierwszy projekt komercyjny. Została stworzona przy użyciu technologii Next.js, TypeScript, Tailwind i z wykorzystaniem narzędzia Google Analytics, które umożliwia mierzenie ruchu na stronie. Strona posiada ciemny i jasny motyw, co umożliwia użytkownikom dostosowanie wyglądu strony do swoich preferencji.",
+
+        "Strona została stworzona dla Zakładu Opiekuńczo-Leczniczego w Koprzywnicy, i składa się z wielu podstron, które są dedykowane dla osób zainteresowanych pobytem w tej placówce. Na stronie można znaleźć opisy usług, znaleźć odpowiedzi na najczęściej zadawane pytania, pobrać dokumenty oraz w prosty sposób skontaktować się z tą firmą. Dodatkowo, na stronie znajdują się również podstrony opisujące wydarzenia, które miały miejsce w tej firmie na przestrzeni lat.",
+
+        "Podczas pracy nad tym projektem nauczyłem się wielu rzeczy. Jedną z nich było zaimplementowanie narzędzia Google Analytics, które umożliwiło mi pomiar ruchu na stronie. Ponadto, nauczyłem się tworzyć politykę prywatności, a także implementować domenę dla strony. W trakcie pracy nad projektem zwracałem szczególną uwagę na zasady SEO i accessiblity, co pozwoliło mi stworzyć stronę bardziej przystępną dla użytkowników internetu oraz poprawić jej pozycjonowanie.",
+
+        "Praca nad projektem zol-koprzywnica.pl pozwoliła mi również nauczyć się tworzyć projekty w sposób bardziej komercyjny, z uwzględnieniem potrzeb klienta. Był to mój pierwszy kontakt z klientem, co pozwoliło mi zdobyć cenne doświadczenie i nauczyć się rozumieć potrzeby klienta oraz dostosowywać projekt do jego oczekiwań."
+      ]
     }
   },
   "cv": {

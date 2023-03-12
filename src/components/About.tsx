@@ -10,11 +10,15 @@ interface MainLanguageProps {
     description: string[];
     "button-text": string;
   };
+  language: "en" | "pl";
 }
 
-const About: React.FC<MainLanguageProps> = ({ languageData }) => {
+const About: React.FC<MainLanguageProps> = ({ languageData, language }) => {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
+    <section
+      id="about"
+      className="w-full md:h-screen p-2 flex items-center py-16"
+    >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-color-text-primary">
@@ -31,10 +35,16 @@ const About: React.FC<MainLanguageProps> = ({ languageData }) => {
           </Link>
         </div>
         <div className="w-full h-auto m-auto shadow-default-xl rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <Image className="rounded" src={AboutImg} alt="/" />
+          <Image
+            className="rounded"
+            src={AboutImg}
+            alt={
+              language === "en" ? "Laptop illustration" : "Ilustracja laptopa"
+            }
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

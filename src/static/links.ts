@@ -6,13 +6,13 @@ export const linkedInAccountLink =
 // Projects links
 export const gymguruDemoLink = "https://gymguru.onrender.com/";
 export const techcardsDemoLink = "https://techcards.onrender.com/";
-export const zolDemoLink = "";
+export const zolDemoLink = "https://zol-koprzywnica.pl/";
 
 export const gymguruCodeLink = "https://github.com/Namencanto/gymguru-project";
 export const techcardsCodeLink =
   "https://github.com/Namencanto/flashcards-project";
-export const zolCodeLink = "";
-export const portfolioCodeLink = "";
+export const zolCodeLink = "https://github.com/Namencanto/zol-koprzywnica";
+export const portfolioCodeLink = "https://github.com/Namencanto/portfolio";
 
 // Form hosting link
 export const formHostingLink =

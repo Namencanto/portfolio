@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
 
 import Main from "src/components/Main";
 import About from "src/components/About";
@@ -59,9 +58,14 @@ interface HomeLanguageProps {
     };
   };
   isDarkMode: boolean;
+  language: "en" | "pl";
 }
 
-const Home: React.FC<HomeLanguageProps> = ({ currentLanguage, isDarkMode }) => {
+const Home: React.FC<HomeLanguageProps> = ({
+  currentLanguage,
+  isDarkMode,
+  language,
+}) => {
   return (
     <>
       <Head>
@@ -71,8 +75,8 @@ const Home: React.FC<HomeLanguageProps> = ({ currentLanguage, isDarkMode }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Main languageData={currentLanguage.main} />
-      <About languageData={currentLanguage.about} />
+      <Main languageData={currentLanguage.main} language={language} />
+      <About languageData={currentLanguage.about} language={language} />
       <Skills languageData={currentLanguage.skills} isDarkMode={isDarkMode} />
       <Projects languageData={currentLanguage.projects} />
       <Contact languageData={currentLanguage.contact} />

@@ -2,7 +2,7 @@ import React from "react";
 import techcardsImg from "../../public/assets/projects/techcards.png";
 import gymguruImg from "../../public/assets/projects/gymguru.png";
 import portfolioImg from "../../public/assets/projects/portfolio.png";
-import zolImg from "../../public/assets/projects/zol.jpg";
+import zolImg from "../../public/assets/projects/zol.png";
 import ProjectItem from "./ProjectItem";
 
 interface ProjectsLanguageProps {
@@ -16,7 +16,7 @@ interface ProjectsLanguageProps {
 
 const Projects: React.FC<ProjectsLanguageProps> = ({ languageData }) => {
   return (
-    <div id="projects" className="w-full">
+    <section id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           {languageData["above-text"]}
@@ -53,7 +53,7 @@ const Projects: React.FC<ProjectsLanguageProps> = ({ languageData }) => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

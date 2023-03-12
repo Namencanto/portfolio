@@ -33,7 +33,7 @@ interface ContactLanguageProps {
 
 const Contact: React.FC<ContactLanguageProps> = ({ languageData }) => {
   return (
-    <div id="contact" className="w-full lg:h-screen">
+    <section id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
         <p className="text-xl tracking-widest uppercase text-color-text-primary">
           {languageData["above-text"]}
@@ -170,7 +170,7 @@ const Contact: React.FC<ContactLanguageProps> = ({ languageData }) => {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

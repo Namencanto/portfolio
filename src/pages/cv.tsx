@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { githubAccountLink, linkedInAccountLink } from "@/links";
-import Image from "next/image";
 
 interface CvLanguages {
   currentLanguage: {

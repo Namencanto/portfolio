@@ -67,25 +67,44 @@
         "MongoDB",
         "SCSS"
       ],
-      "description": "This was my first full website, which was both a culmination and a practical test of my newly acquired skills. I used pure JavaScript to build it, along with EJS and SCSS for the frontend, Node + Express for the server and MongoDB for the database. It's a site that mimics the website of a city gym, where you can check out the gym's current offerings, find its location, and get in touch. It is also possible to create and personalise your own account."
+      "description": [
+        "This was my first full website, which was both a culmination and a practical test of my newly acquired skills. I used pure JavaScript to build it, along with EJS and SCSS for the frontend, Node + Express for the server and MongoDB for the database. It's a site that mimics the website of a city gym, where you can check out the gym's current offerings, find its location, and get in touch. It is also possible to create and personalise your own account."
+      ]
     },
     "techcards": {
       "name": "Techcards",
       "main-technologies": "React, Node",
       "all-technologies": ["React", "Node", "Express", "MySql", "SCSS"],
-      "description": "This website is my second project and the first to be built using React. It is by far my biggest project so far, for which I used SCSS, Node + Express to build the server and MySql for the database in addition to React. It's a site for learning through fiches, users have the possibility to create their own fiches and use different learning options like typing, quiz, i know/i don't know mode and much more. It has a panel of created courses with fiches, divided into free and premium fiches, which can be accessed after buying a premium account. It intelligently calculates repetitions. It has full learning statistics to help track the learning progress available to the user, as well as a monthly ranking of user activity, it has many features to make learning easier. It has a working newsletter. The site also generates invoices for premium accounts."
+      "description": [
+        "This website is my second project and the first to be built using React. It is by far my biggest project so far, for which I used SCSS, Node + Express to build the server and MySql for the database in addition to React. It's a site for learning through fiches, users have the possibility to create their own fiches and use different learning options like typing, quiz, i know/i don't know mode and much more. It has a panel of created courses with fiches, divided into free and premium fiches, which can be accessed after buying a premium account. It intelligently calculates repetitions. It has full learning statistics to help track the learning progress available to the user, as well as a monthly ranking of user activity, it has many features to make learning easier. It has a working newsletter. The site also generates invoices for premium accounts."
+      ]
     },
     "portfolio": {
       "name": "Portfolio",
       "main-technologies": "Next",
       "all-technologies": ["Next", "Typescript", "Tailwind"],
-      "description": "This is my third project, it is a portfolio to easily access my projects and showcase my skills, I built it using Next.js along with Typescript and Tailwind. It was a great project for me to learn about these technologies. It has the ability to change the language from Polish to English and change the theme to dark."
+      "description": [
+        "This is my third project, it is a portfolio to easily access my projects and showcase my skills, I built it using Next.js along with Typescript and Tailwind. It was a great project for me to learn about these technologies. It has the ability to change the language from Polish to English and change the theme to dark."
+      ]
     },
     "zol": {
-      "name": "Zol",
-      "main-technologies": "Coming soon",
-      "all-technologies": ["Coming soon"],
-      "description": "Coming soon"
+      "name": "Care and Medical Facility in Koprzywnicy",
+      "main-technologies": "Next",
+      "all-technologies": [
+        "Next",
+        "Typescript",
+        "Tailwind",
+        "Google Analytics"
+      ],
+      "description": [
+        "The website zol-koprzywnica.pl is my fourth project and also my first commercial project. It was created using Next.js, TypeScript, Tailwind and Google Analytics tool to measure traffic to the site. The site has a dark and light theme, which allows users to change the look of the site according to their preferences.",
+
+        "The website was created for the Care and Treatment Facility in Koprzywnica, and consists of a number of sub-pages that are dedicated to people interested in staying at this facility. On the site you can find descriptions of services, find answers to frequently asked questions, download documents and easily contact this company. In addition, the site also includes sub-pages describing events that have taken place at this company over the years.",
+
+        "I learnt a lot while working on this project. One of them was how to implement the Google Analytics tool, which allowed me to measure traffic to the site. I also learned how to create a privacy policy and how to implement a domain for the site. While working on the project, I paid particular attention to the principles of SEO and accessibility, which allowed me to create a website that was more accessible to web users and improve its positioning.",
+
+        "Working on the zol-koprzywnica.pl project also allowed me to learn how to create projects in a more commercial way, taking into account the client's needs. It was my first contact with a client, which allowed me to gain valuable experience and learn to understand their needs and adapt the project to their expectations."
+      ]
     }
   },
   "cv": {

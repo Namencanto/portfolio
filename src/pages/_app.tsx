@@ -22,6 +22,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
     ...pageProps,
     currentLanguage,
     isDarkMode,
+    language,
   };
 
   const toggleLanguage = (lang: "en" | "pl") => {
@@ -35,6 +36,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
         toggleLanguage={toggleLanguage}
         language={language}
         setIsDarkMode={setIsDarkMode}
+        isDarkMode={isDarkMode}
       />
       <Component {...pageProps} />
     </>

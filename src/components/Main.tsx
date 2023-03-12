@@ -16,11 +16,12 @@ interface MainLanguageProps {
     };
     description: string;
   };
+  language: "en" | "pl";
 }
 
-const Main: React.FC<MainLanguageProps> = ({ languageData }) => {
+const Main: React.FC<MainLanguageProps> = ({ languageData, language }) => {
   return (
-    <div className="w-full h-screen text-center">
+    <section className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm ">{languageData["above-text"]}</p>
@@ -37,22 +38,54 @@ const Main: React.FC<MainLanguageProps> = ({ languageData }) => {
             {languageData.description}
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <a href={linkedInAccountLink} target="_blank" rel="noreferrer">
+            <a
+              href={linkedInAccountLink}
+              target="_blank"
+              rel="noreferrer"
+              title={
+                language === "en"
+                  ? "Click to go to my LinkedIn"
+                  : "Kliknij aby przejść do mojego Linkedina"
+              }
+            >
               <div className="rounded-full shadow-default-lg  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
               </div>
             </a>
-            <a href={githubAccountLink} target="_blank" rel="noreferrer">
+            <a
+              href={githubAccountLink}
+              target="_blank"
+              rel="noreferrer"
+              title={
+                language === "en"
+                  ? "Click to go to my Github"
+                  : "Kliknij aby przejść do mojego Githuba"
+              }
+            >
               <div className="rounded-full shadow-default-lg  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
               </div>
             </a>
-            <Link href="/#contact">
+            <Link
+              href="/#contact"
+              title={
+                language === "en"
+                  ? "Click to go to contact section"
+                  : "Kliknij aby przejść do sekcji kontakt"
+              }
+            >
               <div className="rounded-full shadow-default-lg  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
               </div>
             </Link>
-            <Link href="/cv">
+            <Link
+              href="/cv"
+              title={
+                language === "en"
+                  ? "Click to go to my CV"
+                  : "Kliknij aby przejść do mojego CV"
+              }
+            >
               <div className="rounded-full shadow-default-lg  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <BsFillPersonLinesFill />
               </div>
@@ -60,7 +93,7 @@ const Main: React.FC<MainLanguageProps> = ({ languageData }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

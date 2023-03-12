@@ -7,7 +7,8 @@ import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from "next";
 import TechcardsImage from "../../public/assets/projects/techcards.png";
 import GymGuruImage from "../../public/assets/projects/gymguru.png";
 import PortfolioImage from "../../public/assets/projects/portfolio.png";
-import ZolImage from "../../public/assets/projects/zol.jpg";
+import ZolImage from "../../public/assets/projects/zol.png";
+import Head from "next/head";
 
 interface ProjectLanguageProps {
   languageDataEn: {
@@ -20,7 +21,7 @@ interface ProjectLanguageProps {
     name: string;
     "main-technologies": string;
     "all-technologies": string[];
-    description: string;
+    description: string[];
   };
   languageDataPl: {
     "above-text": string;
@@ -32,7 +33,7 @@ interface ProjectLanguageProps {
     name: string;
     "main-technologies": string;
     "all-technologies": string[];
-    description: string;
+    description: string[];
   };
   currentLanguage: {
     lang: string;
@@ -103,64 +104,78 @@ const project: React.FC<ProjectLanguageProps> = ({
       : null;
   if (languageData !== null) {
     return (
-      <div className="w-full">
-        <div className="w-screen h-[50vh] relative">
-          <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
-          <Image
-            className="absolute z-1"
-            fill={true}
-            src={imageData}
-            alt="/"
-            style={{ objectFit: "cover" }}
-          />
-          <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-            <h2 className="py-2">{languageData.name}</h2>
-            <h3>{languageData["main-technologies"]}</h3>
-          </div>
-        </div>
-
-        <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
-          <div className="col-span-4">
-            <p>{languageData["above-text"]}</p>
-            <h2>{languageData.title}</h2>
-            <p>{languageData.description}</p>
-            <a href={codeLink} target="_blank" rel="noreferrer">
-              <button className=" shadow-default-xl px-8 py-2 mt-4 mr-8">
-                {languageData["code-button"]}
-              </button>
-            </a>
-            <a href={demoLink} target="_blank" rel="noreferrer">
-              <button className="shadow-default-xl px-8 py-2 mt-4">
-                {languageData["demo-button"]}
-              </button>
-            </a>
-          </div>
-          <div className="col-span-4 md:col-span-1 shadow-default-xl rounded-xl py-4">
-            <div className="p-2">
-              <p className="text-center font-bold pb-2">
-                {languageData["technology-list-title"]}
-              </p>
-              <div className="grid grid-cols-3 md:grid-cols-1">
-                {languageData["all-technologies"].map((technology, i) => {
-                  return (
-                    <p
-                      key={i}
-                      className="text-main-color-600 py-2 flex items-center"
-                    >
-                      <RiRadioButtonFill className="pr-1" /> {technology}
-                    </p>
-                  );
-                })}
-              </div>
+      <>
+        <Head>
+          <title>{`${currentLanguage.lang === "en" ? "Project" : "Projekt"} ${
+            languageData.name
+          } - Mateusz Ordon | Front-End Developer`}</title>
+        </Head>
+        <div className="w-full">
+          <div className="w-screen h-[50vh] relative">
+            <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
+            <Image
+              className="absolute z-1"
+              fill={true}
+              src={imageData}
+              alt="/"
+              style={{ objectFit: "cover" }}
+            />
+            <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
+              <h1 className="py-2">{languageData.name}</h1>
+              <h3>{languageData["main-technologies"]}</h3>
             </div>
           </div>
-          <Link href="/#projects">
-            <p className="underline cursor-pointer">
-              {languageData["back-button"]}
-            </p>
-          </Link>
+
+          <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
+            <div className="col-span-4">
+              <p>{languageData["above-text"]}</p>
+              <h2>{languageData.title}</h2>
+
+              {languageData.description.map((text, i) => {
+                return (
+                  <p key={i} className="py-2">
+                    {text}
+                  </p>
+                );
+              })}
+              <a href={codeLink} target="_blank" rel="noreferrer">
+                <button className=" shadow-default-xl px-8 py-2 mt-4 mr-8">
+                  {languageData["code-button"]}
+                </button>
+              </a>
+              <a href={demoLink} target="_blank" rel="noreferrer">
+                <button className="shadow-default-xl px-8 py-2 mt-4">
+                  {languageData["demo-button"]}
+                </button>
+              </a>
+            </div>
+            <div className="col-span-4 md:col-span-1 shadow-default-xl rounded-xl py-4">
+              <div className="p-2">
+                <p className="text-center font-bold pb-2">
+                  {languageData["technology-list-title"]}
+                </p>
+                <div className="grid grid-cols-3 md:grid-cols-1">
+                  {languageData["all-technologies"].map((technology, i) => {
+                    return (
+                      <p
+                        key={i}
+                        className="text-main-color-600 py-2 flex items-center"
+                      >
+                        <RiRadioButtonFill className="pr-1" /> {technology}
+                      </p>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+            <Link href="/#projects">
+              <p className="underline cursor-pointer">
+                {languageData["back-button"]}
+              </p>
+            </Link>
+          </div>
         </div>
-      </div>
+      </>
     );
   } else {
     throw new Error();

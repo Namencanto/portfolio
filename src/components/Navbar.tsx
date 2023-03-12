@@ -35,6 +35,7 @@ interface NavbarLanguageProps {
   toggleLanguage: (lang: "en" | "pl") => void;
   language: "en" | "pl";
   setIsDarkMode(value: boolean | ((prevState: boolean) => boolean)): void;
+  isDarkMode: boolean;
 }
 
 const Navbar: React.FC<NavbarLanguageProps> = ({
@@ -166,15 +167,12 @@ const Navbar: React.FC<NavbarLanguageProps> = ({
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="/" legacyBehavior>
-          <a>
-            <Image
-              src={NavLogo}
-              alt="/"
-              style={{ width: "120px", height: "70px" }}
-              className="cursor-pointer"
-            />
-          </a>
+        <Link href="/">
+          <Image
+            src={NavLogo}
+            alt="logo"
+            style={{ width: "120px", height: "70px" }}
+          />
         </Link>
         <div>
           <ul className="text-color-link hidden nav:flex items-center">
@@ -198,34 +196,68 @@ const Navbar: React.FC<NavbarLanguageProps> = ({
             </li>
             <li className="ml-10 text-sm uppercase flex shrink-0">
               <Image
-                style={
-                  language !== "en" ? { filter: "brightness(70%)" } : undefined
+                tabIndex={0}
+                role="button"
+                title={
+                  language === "en"
+                    ? "Set language to english"
+                    : "Zmień język na angielski"
                 }
                 onClick={setToEnglish}
-                className="mr-2"
+                className={`mr-2 hover:!brightness-100 ${
+                  language !== "en" ? "!brightness-[70%]" : ""
+                }`}
                 src={EnglishIcon}
-                alt="english language icon"
+                alt={
+                  language === "en"
+                    ? "English language icon"
+                    : "Ikona języka angielskiego"
+                }
                 width={24}
                 height={24}
               />
               <Image
-                style={
-                  language !== "pl" ? { filter: "brightness(70%)" } : undefined
+                tabIndex={0}
+                role="button"
+                title={
+                  language === "en"
+                    ? "Set language to polish"
+                    : "Zmień język na polski"
                 }
                 onClick={setToPolish}
-                className="ml-2"
+                className={`ml-2 hover:!brightness-100 ${
+                  language !== "pl" ? "!brightness-[70%]" : ""
+                }`}
                 src={PolishIcon}
-                alt="polish language icon"
+                alt={
+                  language === "en"
+                    ? "Polish language icon"
+                    : "Ikona języka polskiego"
+                }
                 width={24}
                 height={24}
               />
             </li>
             <li className="ml-10 text-sm uppercase shrink-0">
               <Image
+                tabIndex={0}
+                title={
+                  language === "en"
+                    ? `Change theme to ${theme === "light" ? "dark" : "light"}`
+                    : `Zmień motyw na ${theme === "light" ? "ciemny" : "jasny"}`
+                }
                 onClick={theme === "light" ? setDarkMode : setLightMode}
                 className="mr-2"
                 src={theme === "light" ? darkModeIcon : lightModeIcon}
-                alt="english language icon"
+                alt={
+                  language === "en"
+                    ? `Change theme to ${
+                        theme === "light" ? "dark" : "light"
+                      } icon`
+                    : `Ikona zmiany motywu na ${
+                        theme === "light" ? "ciemny" : "jasny"
+                      }`
+                }
                 width={24}
                 height={24}
               />
@@ -235,10 +267,24 @@ const Navbar: React.FC<NavbarLanguageProps> = ({
           {/* Hamburger Icon */}
           <div className="flex items-center text-color-link nav:hidden">
             <Image
+              tabIndex={0}
+              title={
+                language === "en"
+                  ? `Change theme to ${theme === "light" ? "dark" : "light"}`
+                  : `Zmień motyw na ${theme === "light" ? "ciemny" : "jasny"}`
+              }
               onClick={theme === "light" ? setDarkMode : setLightMode}
               className="mr-5"
               src={theme === "light" ? darkModeIcon : lightModeIcon}
-              alt="english language icon"
+              alt={
+                language === "en"
+                  ? `Change theme to ${
+                      theme === "light" ? "dark" : "light"
+                    } icon`
+                  : `Ikona zmiany motywu na ${
+                      theme === "light" ? "ciemny" : "jasny"
+                    }`
+              }
               width={24}
               height={24}
             />
@@ -319,28 +365,44 @@ const Navbar: React.FC<NavbarLanguageProps> = ({
                 className="mt-5 text-sm uppercase flex items-center "
               >
                 <Image
-                  style={
-                    language !== "en"
-                      ? { filter: "brightness(70%)" }
-                      : undefined
+                  tabIndex={0}
+                  role="button"
+                  title={
+                    language === "en"
+                      ? "Set language to english"
+                      : "Zmień język na angielski"
                   }
                   onClick={setToEnglish}
-                  className="mr-2"
+                  className={`mr-2 hover:!brightness-100 ${
+                    language !== "en" ? "!brightness-[70%]" : ""
+                  }`}
                   src={EnglishIcon}
-                  alt="english language icon"
+                  alt={
+                    language === "en"
+                      ? "English language icon"
+                      : "Ikona języka angielskiego"
+                  }
                   width={24}
                   height={24}
                 />
                 <Image
-                  style={
-                    language !== "pl"
-                      ? { filter: "brightness(70%)" }
-                      : undefined
+                  tabIndex={0}
+                  role="button"
+                  title={
+                    language === "en"
+                      ? "Set language to polish"
+                      : "Zmień język na polski"
                   }
                   onClick={setToPolish}
-                  className="ml-2"
+                  className={`ml-2 hover:!brightness-100 ${
+                    language !== "pl" ? "!brightness-[70%]" : ""
+                  }`}
                   src={PolishIcon}
-                  alt="polish language icon"
+                  alt={
+                    language === "en"
+                      ? "Polish language icon"
+                      : "Ikona języka polskiego"
+                  }
                   width={24}
                   height={24}
                 />
@@ -351,17 +413,42 @@ const Navbar: React.FC<NavbarLanguageProps> = ({
                 {languageData["contact-description"]}
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <a href={linkedInAccountLink} target="_blank" rel="noreferrer">
+                <Link
+                  href={linkedInAccountLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  title={
+                    language === "en"
+                      ? "Go to my LinkedIn"
+                      : "Przejdź do mojego Linkedina"
+                  }
+                >
                   <div className="rounded-full shadow-default-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaLinkedinIn />
                   </div>
-                </a>
-                <a href={githubAccountLink} target="_blank" rel="noreferrer">
+                </Link>
+                <Link
+                  href={githubAccountLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  title={
+                    language === "en"
+                      ? "Go to my Github"
+                      : "Przejdź do mojego Githuba"
+                  }
+                >
                   <div className="rounded-full shadow-default-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaGithub />
                   </div>
-                </a>
-                <Link href="/#contact">
+                </Link>
+                <Link
+                  href="/#contact"
+                  title={
+                    language === "en"
+                      ? "Go to contact section"
+                      : "Przejdź do sekcji kontaktu"
+                  }
+                >
                   <div
                     onClick={() => setNav(!nav)}
                     className="rounded-full shadow-default-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300"
@@ -369,7 +456,12 @@ const Navbar: React.FC<NavbarLanguageProps> = ({
                     <AiOutlineMail />
                   </div>
                 </Link>
-                <Link href="/cv">
+                <Link
+                  href="/cv"
+                  title={
+                    language === "en" ? "Go to my CV" : "Przejdź do mojego CV"
+                  }
+                >
                   <div
                     onClick={() => setNav(!nav)}
                     className="rounded-full shadow-default-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300"

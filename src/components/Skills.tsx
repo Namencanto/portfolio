@@ -1,9 +1,9 @@
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Sass from "../../public/assets/skills/sass.png";
 import MySql from "../../public/assets/skills/mysql.png";
 import ReactImg from "../../public/assets/skills/react.png";
-import Node from "../../public/assets/skills/node.png";
+import Tailwind from "../../public/assets/skills/tailwind.png";
 import Mongo from "../../public/assets/skills/mongo.png";
 import Git from "../../public/assets/skills/git.png";
 import NextJS from "../../public/assets/skills/nextjs.png";
@@ -11,8 +11,7 @@ import HtmlCssJs from "../../public/assets/skills/html-css-js.png";
 import Typescript from "../../public/assets/skills/typescript.png";
 import Github from "../../public/assets/skills/github.png";
 import NodeExpress from "../../public/assets/skills/node-express.png";
-
-import { colorBackgroundDarkMode } from "../static/styles/colors";
+import SEO from "../../public/assets/skills/seo.png";
 
 interface SkillsLanguageProps {
   languageData: {
@@ -27,7 +26,7 @@ const Skills: React.FC<SkillsLanguageProps> = ({
   isDarkMode,
 }) => {
   return (
-    <div id="skills" className="w-full lg:h-screen p-2">
+    <section id="skills" className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-color-text-primary">
           {languageData["above-text"]}
@@ -124,7 +123,7 @@ const Skills: React.FC<SkillsLanguageProps> = ({
               </div>
             </div>
           </div>
-          <div className="lg:col-start-2 p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
@@ -144,7 +143,7 @@ const Skills: React.FC<SkillsLanguageProps> = ({
               </div>
             </div>
           </div>
-          <div className="lg:col-start-3 p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
@@ -164,9 +163,29 @@ const Skills: React.FC<SkillsLanguageProps> = ({
               </div>
             </div>
           </div>
+          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={Tailwind} width="64" height="64" alt="/" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Tailwind</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={SEO} width="64" height="64" alt="/" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>SEO Accessibility</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

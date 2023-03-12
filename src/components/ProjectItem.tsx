@@ -18,7 +18,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   buttonText,
 }) => {
   return (
-    <div className="relative flex items-center justify-center h-full w-full shadow-default-xl rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
+    <article className="relative flex items-center justify-center h-full w-full shadow-default-xl rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
       <Image
         className="rounded-xl group-hover:opacity-10 h-full"
         src={backgroundImg}
@@ -35,7 +35,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
           </p>
         </Link>
       </div>
-    </div>
+    </article>
   );
 };
 
