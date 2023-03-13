@@ -10,7 +10,9 @@ interface CvLanguages {
         contact: string;
         "personal-skills-title": string;
         ["hobbies-title"]: string;
+        ["languages-title"]: string;
         hobbies: string[];
+        languages: string[];
       };
       "right-side": {
         "about-me-title": string;
@@ -111,6 +113,17 @@ const cv: React.FC<CvLanguages> = ({ currentLanguage }) => {
             <li>Node + Express</li>
           </ul>
 
+          <h3 className="text-2xl font-medium mt-8 mb-6">
+            {currentLanguage.cv["left-side"]["languages-title"]}
+          </h3>
+          <ul className="text-lg">
+            <li className="mb-2">
+              {currentLanguage.cv["left-side"]["languages"][0]}
+            </li>
+            <li className="mb-2">
+              {currentLanguage.cv["left-side"]["languages"][1]}
+            </li>
+          </ul>
           <h3 className="text-2xl font-medium mt-8 mb-6">
             {currentLanguage.cv["left-side"]["hobbies-title"]}
           </h3>

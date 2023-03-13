@@ -413,7 +413,7 @@ const Navbar: React.FC<NavbarLanguageProps> = ({
                 {languageData["contact-description"]}
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <Link
+                <a
                   href={linkedInAccountLink}
                   target="_blank"
                   rel="noreferrer"
@@ -426,8 +426,8 @@ const Navbar: React.FC<NavbarLanguageProps> = ({
                   <div className="rounded-full shadow-default-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaLinkedinIn />
                   </div>
-                </Link>
-                <Link
+                </a>
+                <a
                   href={githubAccountLink}
                   target="_blank"
                   rel="noreferrer"
@@ -440,7 +440,7 @@ const Navbar: React.FC<NavbarLanguageProps> = ({
                   <div className="rounded-full shadow-default-lg p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaGithub />
                   </div>
-                </Link>
+                </a>
                 <Link
                   href="/#contact"
                   title={

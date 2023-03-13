@@ -19,51 +19,80 @@ interface SkillsLanguageProps {
     title: string;
   };
   isDarkMode: boolean;
+  language: "en" | "pl";
 }
 
 const Skills: React.FC<SkillsLanguageProps> = ({
   languageData,
   isDarkMode,
+  language,
 }) => {
   return (
-    <section id="skills" className="w-full lg:h-screen p-2">
+    <section
+      aria-label={
+        language === "en"
+          ? "A section demonstrating my skills in each technology"
+          : "Sekcja pokazujące moje umiejętności w poszczególnych technologiach"
+      }
+      id="skills"
+      className="w-full lg:h-screen p-2"
+    >
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-color-text-primary">
           {languageData["above-text"]}
         </p>
         <h2 className="py-4">{languageData.title}</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 ">
-          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 ">
+          <article className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={HtmlCssJs} width="64" height="64" alt="/" />
+                <Image
+                  src={HtmlCssJs}
+                  width="64"
+                  height="64"
+                  alt={
+                    language === "en"
+                      ? "HTML, CSS and JavaScript logo"
+                      : "Logo HTML, CSS i JavaScript"
+                  }
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Html Css Js</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </article>
+          <article className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={Sass} width="64" height="64" alt="/" />
+                <Image
+                  src={Sass}
+                  width="64"
+                  height="64"
+                  alt={language === "en" ? "Sass logo" : "Logo Sass"}
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Scss</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </article>
+          <article className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={Git} width="64" height="64" alt="/" />
+                <Image
+                  src={Git}
+                  width="64"
+                  height="64"
+                  alt={language === "en" ? "Git logo" : "Logo Git"}
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Git</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </article>
+          <article className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
@@ -75,55 +104,77 @@ const Skills: React.FC<SkillsLanguageProps> = ({
                   src={Github}
                   width="64"
                   height="64"
-                  alt="/"
+                  alt={language === "en" ? "Github logo" : "Logo Githuba"}
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Github</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </article>
+          <article className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={ReactImg} width="64" height="64" alt="/" />
+                <Image
+                  src={ReactImg}
+                  width="64"
+                  height="64"
+                  alt={language === "en" ? "React logo" : "Logo Reacta"}
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>React</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </article>
+          <article className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={Typescript} width="64" height="64" alt="/" />
+                <Image
+                  src={Typescript}
+                  width="64"
+                  height="64"
+                  alt={
+                    language === "en" ? "Typescript logo" : "Logo Typescript"
+                  }
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Typescript</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </article>
+          <article className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={MySql} width="64" height="64" alt="/" />
+                <Image
+                  src={MySql}
+                  width="64"
+                  height="64"
+                  alt={language === "en" ? "Mysql logo" : "Logo Mysql"}
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>MySql</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </article>
+          <article className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={Mongo} width="64" height="64" alt="/" />
+                <Image
+                  src={Mongo}
+                  width="64"
+                  height="64"
+                  alt={language === "en" ? "MongoDB logo" : "Logo MongoDB"}
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>MongoDB</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </article>
+          <article className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
@@ -135,15 +186,15 @@ const Skills: React.FC<SkillsLanguageProps> = ({
                   src={NextJS}
                   width="64"
                   height="64"
-                  alt="/"
+                  alt={language === "en" ? "Next.js logo" : "Logo Next.js"}
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Next</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </article>
+          <article className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
@@ -155,35 +206,49 @@ const Skills: React.FC<SkillsLanguageProps> = ({
                   src={NodeExpress}
                   width="64"
                   height="64"
-                  alt="/"
+                  alt={
+                    language === "en"
+                      ? "Node with express logo"
+                      : "Logo Node z express"
+                  }
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Node Express</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </article>
+          <article className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={Tailwind} width="64" height="64" alt="/" />
+                <Image
+                  src={Tailwind}
+                  width="64"
+                  height="64"
+                  alt={language === "en" ? "Tailwind logo" : "Logo Tailwind"}
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Tailwind</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </article>
+          <article className="p-6 shadow-default-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={SEO} width="64" height="64" alt="/" />
+                <Image
+                  src={SEO}
+                  width="64"
+                  height="64"
+                  alt={language === "en" ? "SEO logo" : "Logo SEO"}
+                />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>SEO Accessibility</h3>
               </div>
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
       </div>
     </section>
   );

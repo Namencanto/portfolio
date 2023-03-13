@@ -29,11 +29,19 @@ interface ContactLanguageProps {
       "button-text": string;
     };
   };
+  language: "en" | "pl";
 }
 
-const Contact: React.FC<ContactLanguageProps> = ({ languageData }) => {
+const Contact: React.FC<ContactLanguageProps> = ({
+  languageData,
+  language,
+}) => {
   return (
-    <section id="contact" className="w-full lg:h-screen">
+    <section
+      aria-label={language === "en" ? "A contact section" : "Sekcja kontaktu"}
+      id="contact"
+      className="w-full lg:h-screen"
+    >
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
         <p className="text-xl tracking-widest uppercase text-color-text-primary">
           {languageData["above-text"]}
@@ -41,13 +49,22 @@ const Contact: React.FC<ContactLanguageProps> = ({ languageData }) => {
         <h2 className="py-4">{languageData.title}</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-default-xl rounded-xl p-4">
+          <section
+            aria-label={
+              language === "en"
+                ? "General description of the contact section"
+                : "Generalny opis sekcji kontaktu"
+            }
+            className="col-span-3 lg:col-span-2 w-full h-full shadow-default-xl rounded-xl p-4"
+          >
             <div className="lg:p-4 h-full ">
               <div>
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   src={ContactImg}
-                  alt="/"
+                  alt={
+                    language === "en" ? "Photo of laptop" : "Zdjęcie laptopa"
+                  }
                 />
               </div>
               <div>
@@ -64,12 +81,26 @@ const Contact: React.FC<ContactLanguageProps> = ({ languageData }) => {
                     href={linkedInAccountLink}
                     target="_blank"
                     rel="noreferrer"
+                    title={
+                      language === "en"
+                        ? "Go to my LinkedIn"
+                        : "Przejdź do mojego Linkedina"
+                    }
                   >
                     <div className="rounded-full shadow-default-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaLinkedinIn />
                     </div>
                   </a>
-                  <a href={githubAccountLink} target="_blank" rel="noreferrer">
+                  <a
+                    href={githubAccountLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    title={
+                      language === "en"
+                        ? "Go to my Github"
+                        : "Przejdź do mojego Githuba"
+                    }
+                  >
                     <div className="rounded-full shadow-default-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaGithub />
                     </div>
@@ -78,20 +109,30 @@ const Contact: React.FC<ContactLanguageProps> = ({ languageData }) => {
                   <div className="rounded-full shadow-default-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <AiOutlineMail />
                   </div>
-                  <Link href="/resume" legacyBehavior>
-                    <a>
-                      <div className="rounded-full shadow-default-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <BsFillPersonLinesFill />
-                      </div>
-                    </a>
+                  <Link
+                    href="/cv"
+                    title={
+                      language === "en" ? "Go to my CV" : "Przejdź do mojego CV"
+                    }
+                  >
+                    <div className="rounded-full shadow-default-lg p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <BsFillPersonLinesFill />
+                    </div>
                   </Link>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
           {/* right */}
-          <div className="col-span-3 w-full h-auto shadow-default-xl rounded-xl lg:p-4">
+          <section
+            aria-label={
+              language === "en"
+                ? "Section with contact form"
+                : "Sekcja z formularzem kontaktowym"
+            }
+            className="col-span-3 w-full h-auto shadow-default-xl rounded-xl lg:p-4"
+          >
             <div className="p-4">
               <form
                 action={formHostingLink}
@@ -155,18 +196,21 @@ const Contact: React.FC<ContactLanguageProps> = ({ languageData }) => {
                 </button>
               </form>
             </div>
-          </div>
+          </section>
         </div>
         <div className="flex justify-center py-12">
-          <Link href="/" legacyBehavior>
-            <a>
-              <div className="rounded-full shadow-default-lg p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <HiOutlineChevronDoubleUp
-                  className="text-color-text-primary"
-                  size={30}
-                />
-              </div>
-            </a>
+          <Link
+            href="/"
+            title={
+              language === "en" ? "Go to top of page" : "Przejdź na góre strony"
+            }
+          >
+            <div className="rounded-full shadow-default-lg p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+              <HiOutlineChevronDoubleUp
+                className="text-color-text-primary"
+                size={30}
+              />
+            </div>
           </Link>
         </div>
       </div>

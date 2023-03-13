@@ -77,9 +77,13 @@ const Home: React.FC<HomeLanguageProps> = ({
 
       <Main languageData={currentLanguage.main} language={language} />
       <About languageData={currentLanguage.about} language={language} />
-      <Skills languageData={currentLanguage.skills} isDarkMode={isDarkMode} />
-      <Projects languageData={currentLanguage.projects} />
-      <Contact languageData={currentLanguage.contact} />
+      <Skills
+        languageData={currentLanguage.skills}
+        isDarkMode={isDarkMode}
+        language={language}
+      />
+      <Projects languageData={currentLanguage.projects} language={language} />
+      <Contact languageData={currentLanguage.contact} language={language} />
     </>
   );
 };

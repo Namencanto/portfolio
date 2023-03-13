@@ -76,7 +76,8 @@
       ],
       "description": [
         "To była moja pierwsza pełnoprawna strona internetowa, która była zwieńczeniem, jak i sprawdzeniem moich pierwszych zdobytych umiejętności w praktyce. Użyłem do jej stworzenia czystego JavaScript-a wraz z EJS i SCSS do stworzenia frontendu, Node + Express do stworzenia serwera oraz MongoDB jako bazy danych. Jest to strona imitująca stronę miejskiej siłowni, na której można sprawdzić aktualną ofertę siłowni, sprawdzić jej lokalizację i skontaktować się z nią. Istnieje również możliwość założenia własnego konta i personalizacji."
-      ]
+      ],
+      "short-description": "To moja pierwsza pełnoprawna strona internetowa, na której wykorzystałem czysty JavaScript, EJS i SCSS do stworzenia frontendu, Node + Express do serwera i MongoDB jako bazy danych. Strona imituje miejską siłownię, umożliwia sprawdzenie aktualnej oferty, lokalizację, kontakt i założenie własnego konta z personalizacją."
     },
     "techcards": {
       "name": "Techcards",
@@ -84,7 +85,8 @@
       "all-technologies": ["React", "Node", "Express", "MySql", "SCSS"],
       "description": [
         "Ta strona jest moim drugim projektem, jak i zarazem pierwszym stworzonym przy użyciu Reacta. Jest to jak na razie mój największy projekt do którego stworzenia oprócz Reacta użyłem również SCSS, Node + Express do tworzenia serwera oraz MySql jako bazy danych. Jest to strona która służy do nauki poprzez fiszki, Użytkownicy mają możliwość tworzenia własnych fiszek i korzystania z różnych opcji nauki, takich jak wpisywanie, quiz, tryb wiem/nie wiem i wiele więcej. posiada panel ze stworzonymi kursami przy użyciu fiszek, które są podzielone na fiszki bezpłatne i premium do których można uzyskać dostęp po kupnie konta premium. W inteligentny sposób oblicza powtórki. Posiada pełne statystyki nauki pomocne w śledzeniu postępów nauki dostępne użytkownikowi a także miesięczny ranking aktywności użytkowników, posiada wiele funkcjonalności ułatwiających naukę. Posiada działający newsletter. Strona generuje także faktury sprzedaży kont premium."
-      ]
+      ],
+      "short-description": "To mój drugi projekt, strona do nauki poprzez fiszki z panelami kursów i funkcjonalnościami ułatwiającymi naukę. Pełne statystyki nauki, miesięczny ranking aktywności użytkowników, newsletter, faktury sprzedaży. Stworzona w React, SCSS, Node + Express, z bazą danych MySql."
     },
     "portfolio": {
       "name": "Portfolio",
@@ -92,7 +94,8 @@
       "all-technologies": ["Next", "Typescript", "Tailwind"],
       "description": [
         "Jest to mój trzeci projekt, jest to portfolio umożliwiające łatwy dostęp do moich projektów i pokazujące moje umiejętności, zbudowałem go przy użyciu Next.js wraz z Typescript i Tailwind. Był to dla mnie wspaniały projekt, który pozwolił mi na poznanie tych technologii. Posiada możliwość zmiany języka z polskiego na angielski oraz zmiany motywu na ciemny."
-      ]
+      ],
+      "short-description": "Jest to mój trzeci projekt, portfolio prezentujące moje umiejętności i projekty, zbudowane przy użyciu Next.js, Typescript i Tailwind. Posiada opcję zmiany języka i motywu na ciemny."
     },
     "zol": {
       "name": "Zakład Opiekuńczo-Leczniczy w Koprzywnicy",
@@ -111,7 +114,8 @@
         "Podczas pracy nad tym projektem nauczyłem się wielu rzeczy. Jedną z nich było zaimplementowanie narzędzia Google Analytics, które umożliwiło mi pomiar ruchu na stronie. Ponadto, nauczyłem się tworzyć politykę prywatności, a także implementować domenę dla strony. W trakcie pracy nad projektem zwracałem szczególną uwagę na zasady SEO i accessiblity, co pozwoliło mi stworzyć stronę bardziej przystępną dla użytkowników internetu oraz poprawić jej pozycjonowanie.",
 
         "Praca nad projektem zol-koprzywnica.pl pozwoliła mi również nauczyć się tworzyć projekty w sposób bardziej komercyjny, z uwzględnieniem potrzeb klienta. Był to mój pierwszy kontakt z klientem, co pozwoliło mi zdobyć cenne doświadczenie i nauczyć się rozumieć potrzeby klienta oraz dostosowywać projekt do jego oczekiwań."
-      ]
+      ],
+      "short-description": "Zol-koprzywnica.pl to moja pierwsza strona komercyjna, stworzona w Next.js, TypeScript i Tailwind z Google Analytics. Strona zawiera opisy usług, dokumenty, wydarzenia i formularz kontaktowy dla Zakładu Opiekuńczo-Leczniczego w Koprzywnicy. Nauczyłem się w trakcie pracy na stronie wielu rzeczy, w tym implementacji narzędzia Google Analytics, polityki prywatności, domeny, zasad SEO i accessiblity. Projekt nauczył mnie tworzenia stron dla klientów i dostosowywania ich do ich potrzeb."
     }
   },
   "cv": {
@@ -119,7 +123,9 @@
       "contact": "Kontakt",
       "personal-skills-title": "Umiejętności",
       "hobbies-title": "Zainteresowania",
-      "hobbies": ["Siłownia", "Dietetyka", "Inwestowanie"]
+      "hobbies": ["Siłownia", "Dietetyka", "Inwestowanie"],
+      "languages-title": "Języki obce",
+      "languages": ["Polski - Ojczysty", "Angielski - B2"]
     },
     "right-side": {
       "about-me-title": "O mnie",
