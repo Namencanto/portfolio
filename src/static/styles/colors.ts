@@ -2,8 +2,8 @@
 export const colorLinkLightMode = "#1f2937";
 export const colorBackgroundLightMode = "#ecf0f3";
 export const colorTextPrimaryLightMode = "#5651e5";
-export const colorCvPrimaryLightMode = "#dce2e7 ";
-export const colorCvSecondaryLightMode = "#f3f4f6";
+export const colorCvPrimaryLightMode = "#E6E7E8 ";
+export const colorCvSecondaryLightMode = "#fff";
 
 // colors for dark mode
 export const colorLinkDarkMode = "#E8E9EB";

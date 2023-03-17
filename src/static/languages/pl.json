@@ -117,19 +117,5 @@
       ],
       "short-description": "Zol-koprzywnica.pl to moja pierwsza strona komercyjna, stworzona w Next.js, TypeScript i Tailwind z Google Analytics. Strona zawiera opisy usług, dokumenty, wydarzenia i formularz kontaktowy dla Zakładu Opiekuńczo-Leczniczego w Koprzywnicy. Nauczyłem się w trakcie pracy na stronie wielu rzeczy, w tym implementacji narzędzia Google Analytics, polityki prywatności, domeny, zasad SEO i accessiblity. Projekt nauczył mnie tworzenia stron dla klientów i dostosowywania ich do ich potrzeb."
     }
-  },
-  "cv": {
-    "left-side": {
-      "contact": "Kontakt",
-      "personal-skills-title": "Umiejętności",
-      "hobbies-title": "Zainteresowania",
-      "hobbies": ["Siłownia", "Dietetyka", "Inwestowanie"],
-      "languages-title": "Języki obce",
-      "languages": ["Polski - Ojczysty", "Angielski - B2"]
-    },
-    "right-side": {
-      "about-me-title": "O mnie",
-      "about-me": "Jestem samoukiem skupionym na programowaniu aplikacji łączących front-end z back-endem, a moje zainteresowania skupiają się głównie na technologiach takich jak React, Next.js, TypeScript, Node, Express, MongoDB i MySQL. Docelowo chciałbym zostać full-stack developerem"
-    }
   }
 }

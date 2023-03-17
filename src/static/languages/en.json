@@ -110,19 +110,5 @@
       ],
       "short-description": "Zol-koprzywnica.pl is my first commercial website, built in Next.js, TypeScript and Tailwind with Google Analytics. The site contains descriptions of services, documents, events and a contact form for the Care and Treatment Centre in Koprzywnica. I learnt a lot while working on the site, including implementing the Google Analytics tool, privacy policy, domain, SEO principles and accessibility. The project taught me how to create pages for clients and adapt them to their needs."
     }
-  },
-  "cv": {
-    "left-side": {
-      "contact": "Contact",
-      "personal-skills-title": "Personal skills",
-      "hobbies-title": "Hobbies",
-      "hobbies": ["Gym", "Nutrition", "Investing"],
-      "languages-title": "Languages",
-      "languages": ["Polish - Native", "English - B2"]
-    },
-    "right-side": {
-      "about-me-title": "About me",
-      "about-me": "I am a self-taught developer focused on programming applications that combine front-end and back-end, and my interests are mainly focused on technologies such as React, Next.js, TypeScript, Node, Express, MongoDB and MySQL. Eventually I would like to become a full-stack developer."
-    }
   }
 }
