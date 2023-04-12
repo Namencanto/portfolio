@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Navbar from "../components/Navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 import english from "../static/languages/en.json";
 import polish from "../static/languages/pl.json";
@@ -39,6 +40,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
         isDarkMode={isDarkMode}
       />
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 };
