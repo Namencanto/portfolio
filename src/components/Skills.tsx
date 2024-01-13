@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Sass from "../../public/assets/skills/sass.png";
-import MySql from "../../public/assets/skills/mysql.png";
+import PostgreSQL from "../../public/assets/skills/postgresql.png";
 import ReactImg from "../../public/assets/skills/react.png";
 import Tailwind from "../../public/assets/skills/tailwind.png";
 import NuxtJS from "../../public/assets/skills/nuxt-js.png";
@@ -150,14 +150,16 @@ const Skills: React.FC<SkillsLanguageProps> = ({
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src={MySql}
+                  src={PostgreSQL}
                   width="64"
                   height="64"
-                  alt={language === "en" ? "Mysql logo" : "Logo Mysql"}
+                  alt={
+                    language === "en" ? "PostgreSQL logo" : "Logo PostgreSQL"
+                  }
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>MySql</h3>
+                <h3>PostgreSQL</h3>
               </div>
             </div>
           </article>
