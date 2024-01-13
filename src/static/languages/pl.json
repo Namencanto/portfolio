@@ -17,7 +17,7 @@
     "title": {
       "greeting": "Cześć, Jestem",
       "name": "Mateusz",
-      "position": "Front-End Web Developer"
+      "position": "Full-stack Developer"
     },
     "description": "Skupiam się na tworzeniu responsywnych aplikacji front-end zintegrowanych z back-endem"
   },
@@ -25,7 +25,7 @@
     "above-text": "O MNIE",
     "title": "Kim Jestem",
     "description": [
-      "Jestem samoukiem ukierunkowanym na programowanie aplikacji łączących front-end i back-end, a moje zainteresowania koncentrują się głównie na technologiach takich jak React, Next.js, TypeScript, Node, Express, MongoDB i MySQL. Moim celem jest zostanie full-stack developerem.",
+      "Obecnie pracuję jako fullstack developer w <a href=\"https://cryptovoucher.io\" target=\"_blank\">Cryptovoucher.io</a>, gdzie wykorzystuję swoją wiedzę w programowaniu aplikacji, w których integruję front-end i back-end. Skupiam się głównie na technologiach takich jak React, Vue, Nuxt.js Next.js, TypeScript, Node, Express, MongoDB i MySQL.",
       "Posiadam doświadczenie w tworzeniu projektów, w których wykorzystywałem swoje umiejętności. W trakcie mojej edukacji stworzyłem kilka aplikacji, które pomogły mi doskonalić swoje umiejętności w programowaniu."
     ],
     "button-text": "Sprawdź kilka moich ostatnich projektów."
@@ -44,8 +44,8 @@
     "above-text": "KONTAKT",
     "title": "Skontaktuj się ze mną",
     "full-name": "Mateusz",
-    "position": "Front-End Developer",
-    "job-status": "Jestem dostępny na stanowiska w pełnym wymiarze godzin. Skontaktuj się ze mną i porozmawiajmy.",
+    "position": "Full-stack Developer",
+    "job-status": "Aktualnie zatrudniony w <a href=\"https://cryptovoucher.io\" target=\"_blank\">Cryptovoucher.io</a>",
     "contact-description": "Skontaktujmy się",
     "form": {
       "name": "IMIĘ",

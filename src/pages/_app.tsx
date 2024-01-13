@@ -14,7 +14,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
     pl: polish,
   };
 
-  const [language, setLanguage] = useState<keyof typeof languageData>("pl");
+  const [language, setLanguage] = useState<keyof typeof languageData>("en");
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 
   const currentLanguage = languageData[language];

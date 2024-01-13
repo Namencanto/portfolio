@@ -10,7 +10,7 @@
     "title": {
       "greeting": "Hi, I'm",
       "name": "Mateusz",
-      "position": "A Front-End Web Developer"
+      "position": "A Full-Stack Developer"
     },
     "description": "I’m focused on building responsive front-end web applications integrating back-end technologies."
   },
@@ -18,7 +18,7 @@
     "above-text": "ABOUT",
     "title": "Who I Am",
     "description": [
-      "I am a self-taught developer focused on programming applications that combine front-end and back-end, and my interests are mainly focused on technologies such as React, Next.js, TypeScript, Node, Express, MongoDB and MySQL. Eventually I would like to become a full-stack developer.",
+      "I am currently employed as a self-taught fullstack developer at <a href=\"https://cryptovoucher.io\" target=\"_blank\">Cryptovoucher.io</a>, where I apply my expertise in programming applications that seamlessly integrate front-end and back-end functionalities. My primary focus revolves around technologies such as React, Vue, Nuxt.js Next.js, TypeScript, Node, Express, MongoDB, and MySQL.",
       "I have experience in creating projects where I have used my skills. During my education I created several applications that helped me improve my programming skills."
     ],
     "button-text": "Check out some of my latest projects."
@@ -37,8 +37,8 @@
     "above-text": "CONTACT",
     "title": "Get In Touch",
     "full-name": "Mateusz",
-    "position": "Front-End Developer",
-    "job-status": "I am available for full-time positions. Contact me and let's talk.",
+    "position": "Full-Stack Developer",
+    "job-status": "I am currently working at <a href=\"https://cryptovoucher.io\" target=\"_blank\">Cryptovoucher.io</a>",
     "contact-description": "CONNECT WITH ME",
     "form": {
       "name": "NAME",

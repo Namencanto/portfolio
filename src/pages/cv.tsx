@@ -18,7 +18,7 @@ const cv: React.FC<CvLanguages> = ({ language, isDarkMode }) => {
         <title>Mateusz | CV</title>
         <meta
           name="description"
-          content="I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences."
+          content="I’m a full-stack developer specializing in building (and occasionally designing) exceptional digital experiences."
         />
         <link rel="icon" href="/fav.png" />
       </Head>

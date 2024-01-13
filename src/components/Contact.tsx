@@ -70,7 +70,12 @@ const Contact: React.FC<ContactLanguageProps> = ({
               <div>
                 <h2 className="py-2">{languageData["full-name"]}</h2>
                 <p>{languageData.position}</p>
-                <p className="py-4">{languageData["job-status"]}</p>
+                <p
+                  className="py-4"
+                  dangerouslySetInnerHTML={{
+                    __html: languageData["job-status"],
+                  }}
+                ></p>
               </div>
               <div>
                 <p className="uppercase pt-8">

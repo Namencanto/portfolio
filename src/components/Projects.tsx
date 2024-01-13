@@ -19,7 +19,6 @@ const Projects: React.FC<ProjectsLanguageProps> = ({
   languageData,
   language,
 }) => {
-  console.log(language);
   return (
     <section
       aria-label={

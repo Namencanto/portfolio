@@ -110,7 +110,7 @@ const project: React.FC<ProjectLanguageProps> = ({
         <Head>
           <title>{`${currentLanguage.lang === "en" ? "Project" : "Projekt"} ${
             languageData.name
-          } - Mateusz Ordon | Front-End Developer`}</title>
+          } - Mateusz Ordon | Full-Stack Developer`}</title>
           <meta
             name="description"
             content={languageData["short-description"]}

@@ -25,7 +25,10 @@ const About: React.FC<MainLanguageProps> = ({ languageData, language }) => {
             {languageData["above-text"]}
           </p>
           <h2 className="py-4"> {languageData.title}</h2>
-          <p className="py-2 tex-gray-600">{languageData.description[0]}</p>
+          <p
+            className="py-2 tex-gray-600"
+            dangerouslySetInnerHTML={{ __html: languageData.description[0] }}
+          ></p>
           <p className="py-2 tex-gray-600">{languageData.description[1]}</p>
           <Link
             href="#projects"
