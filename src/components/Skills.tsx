@@ -4,12 +4,12 @@ import Sass from "../../public/assets/skills/sass.png";
 import MySql from "../../public/assets/skills/mysql.png";
 import ReactImg from "../../public/assets/skills/react.png";
 import Tailwind from "../../public/assets/skills/tailwind.png";
-import Mongo from "../../public/assets/skills/mongo.png";
+import NuxtJS from "../../public/assets/skills/nuxt-js.png";
+import Vue from "../../public/assets/skills/vue.png";
 import Git from "../../public/assets/skills/git.png";
 import NextJS from "../../public/assets/skills/nextjs.png";
-import HtmlCssJs from "../../public/assets/skills/html-css-js.png";
+import MochaChai from "../../public/assets/skills/mocha-chai.png";
 import Typescript from "../../public/assets/skills/typescript.png";
-import Github from "../../public/assets/skills/github.png";
 import NodeExpress from "../../public/assets/skills/node-express.png";
 import SEO from "../../public/assets/skills/seo.png";
 
@@ -47,18 +47,20 @@ const Skills: React.FC<SkillsLanguageProps> = ({
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src={HtmlCssJs}
-                  width="64"
-                  height="64"
+                  src={MochaChai}
+                  width="128"
+                  height="128"
                   alt={
                     language === "en"
-                      ? "HTML, CSS and JavaScript logo"
-                      : "Logo HTML, CSS i JavaScript"
+                      ? "Mocha with Chai logo"
+                      : "Logo Mocha with Chai "
                   }
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Html Css Js</h3>
+                <h3>
+                  Mocha, <br /> Chai
+                </h3>
               </div>
             </div>
           </article>
@@ -101,14 +103,14 @@ const Skills: React.FC<SkillsLanguageProps> = ({
                       ? { filter: " brightness(0) invert(1)" }
                       : undefined
                   }
-                  src={Github}
+                  src={Vue}
                   width="64"
                   height="64"
-                  alt={language === "en" ? "Github logo" : "Logo Githuba"}
+                  alt={language === "en" ? "Vue logo" : "Logo Vue"}
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Github</h3>
+                <h3>Vue</h3>
               </div>
             </div>
           </article>
@@ -163,14 +165,14 @@ const Skills: React.FC<SkillsLanguageProps> = ({
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src={Mongo}
+                  src={NuxtJS}
                   width="64"
                   height="64"
-                  alt={language === "en" ? "MongoDB logo" : "Logo MongoDB"}
+                  alt={language === "en" ? "Nuxt.js logo" : "Logo Nuxt.js"}
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>MongoDB</h3>
+                <h3>Nuxt</h3>
               </div>
             </div>
           </article>
@@ -214,7 +216,9 @@ const Skills: React.FC<SkillsLanguageProps> = ({
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Node Express</h3>
+                <h3>
+                  Node, <br /> Express
+                </h3>
               </div>
             </div>
           </article>
@@ -244,7 +248,9 @@ const Skills: React.FC<SkillsLanguageProps> = ({
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>SEO Accessibility</h3>
+                <h3>
+                  SEO, <br /> Accessibility
+                </h3>
               </div>
             </div>
           </article>
